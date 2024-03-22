@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        #divone{
+            position: absolute;
+            background-color: rgb(90, 90, 255);
+            color: rgb(255, 255, 255);
+            width: 100px;
+            height: 100px;
+            transition: 3s;
+            left: 40px;
+            top: 100px;
+            transform: scale(150%);
+            opacity: 0.5;
+        
+        }
+        #divtwo{
+            color: rgb(255, 255, 255);
+            position: absolute;
+            color: rgb(212, 79, 79);
+            width: 100px;
+            height: 100px;
+            transition: 4s;
+            left: 400px;
+            top: 100px;
+        }
+    </style>
+    </head>
+ <body>
+<div id="divone"></div>
+<button onclick="document.getElementById('divone').style.background='red'">Paint red</button>
+<button onclick="document.getElementById('divone').style.background='pink'">Paint pink</button>
+<button onclick="document.getElementById('divone').style.background='orange'">Paint orange</button>
+<button onclick="document.getElementById('divone').style.top='100px'">move</button>
+<button onclick="document.getElementById('divone').style.top='0px'">move back</button>
+<div id="divtwo"></div>
+<button onclick="document.getElementById('divtwo').style.background='black'">add element</button>
+<button onclick="document.getElementById('divtwo').style.transform='rotate(60deg)'">cc</button>
+<button id="'btn">2moves</button>
+   <script>
+    document.onclick = e => {
+        console.log('kjkj');
+        document.getElementById('divone').style.top=`${e.clientY}px`;
+        document.getElementById('divone').style.left=`${e.clientX}px`;
+    }
+   </script>
+</body>
+</html>
