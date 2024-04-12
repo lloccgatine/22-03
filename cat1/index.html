@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat</title>
+    <style>
+        #face{
+            background-color: chocolate;
+            border-radius: 50%;
+            position: absolute;
+            left: 300px;
+            width: 700px;
+            height: 360px;
+            top: 40px;
+        }
+        #uho1{
+            background-color:chocolate;
+            height: 140px;
+            width: 100px;
+            position: absolute;
+            transform: rotate(30deg);
+            top: 9px;
+            left: 50px;
+        }
+        #uho2{
+            background-color:chocolate;
+            height: 140px;
+            width: 100px;
+            position: absolute;
+            transform: rotate(60deg);
+            top: 9px;
+            left: 515px;
+        }
+        #hk1{
+            position: absolute;
+            height: 60px;
+            width: 60px;
+            box-shadow: 0px 10px 10px;
+            background-color: chocolate;
+            top: 250px;
+            left: 320px;
+            border-radius: 50%;
+        }
+        #hk2{
+            position: absolute;
+            height: 90px;
+            width: 90px;
+            box-shadow: 0px 8px 8px;
+            background-color: chocolate;
+            top: 200px;
+            left: 340px;
+            border-radius: 50%;
+        }
+        #hk3{
+            position: absolute;
+            height: 90px;
+            width: 90px;
+            box-shadow: 0px 8px 8px;
+            background-color: chocolate;
+            top: 200px;
+            left: 270px;
+            border-radius: 50%; 
+        }
+        #nose{
+            background-color:rgb(0, 0, 0);
+            height: 45px;
+            width: 45px;
+            position: absolute;
+            transform: rotate(45deg);
+            top: 220px;
+            left: 327px;
+        }
+        #eye1{
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+            width: 80px;
+            border-radius: 50%;
+            top: 115px;
+            left: 140px;
+            transition: 1s;
+        }
+        #eye2{
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+            width: 80px;
+            border-radius: 50%;
+            top: 115px;
+            left: 460px;
+            transition: 1s;
+        }
+        .zr1{
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            height: 60px;
+            width: 30px;
+            border-radius: 50%;
+            top: 0px;
+            left: 25px;
+        }
+        #zr2{
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            height: 60px;
+            width: 30px;
+            border-radius: 50%;
+            top: 0px;
+            left: 25px;
+        }
+        .close {
+            transform: scaleY(0);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="close"></div>
+    <div id="face">
+    <div id="uho1"></div>
+    <div id="uho2"></div>
+    <div id="hk1"></div>
+    <div id="hk2"></div>
+    <div id="hk3"></div>
+    <div id="nose"></div>
+    <div id="eye1">
+        <div class="zr1"></div>
+    </div>
+    <div id="eye2">
+        <div id="zr2"></div>
+    </div>
+</div>
+ <button onclick="document.getElementById('eye1').classList.toggle('close')">left eye</button>
+ <button onclick="document.getElementById('eye2').classList.toggle('close')">right eye</button>
+</body>
+</html>
